@@ -1,0 +1,107 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.poolparty {
+  width: 100%;
+  transition: 0.7s all;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.poolparty:hover {
+  cursor: pointer;
+}
+
+.poolparty:hover .partyName{
+  text-decoration: underline;
+}
+
+.partyName {
+  position: relative;
+  z-index: 999 !important;
+  margin: 0 0 0 10px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 3em;
+  text-wrap: wrap;
+}
+
+.poolparty:hover .popper{
+  -webkit-filter: drop-shadow(1px 1px 0 black)
+  drop-shadow(-1px -1px 0 black);
+  filter: drop-shadow(1px 1px 0 black)
+  drop-shadow(-1px -1px 0 black);
+}
+
+
+.poolparty .year {
+  position: absolute;
+  text-align: left;
+  line-height: 10vh;
+  margin-left: 10px;
+  font-size: 2em;
+}
+
+.popper {
+  position: absolute;
+  z-index: 1;
+}
+
+@media (min-width:100px) and (max-width:800px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  .poolparty {
+    height: 100vh;
+    line-height: 100vh;
+  }
+
+  .poolparty .popper {
+    max-height: 70vh;
+    text-align: center;
+    margin:0;
+  }
+
+  .popper {
+    right: 0;
+    max-width: 80vw;
+  }
+
+  .hawaii .popper {
+    margin-top: 100px;
+  }
+
+  .holyaperoly .partyName {
+    color: rgba(54, 81, 38, 0.8);
+  }
+
+
+}
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .poolparty {
+    height: 33.33vh;
+    line-height: 33.33vh;
+  }
+
+  .poolparty h1 {
+    z-index: 999;
+  }
+
+  .poolparty .popper {
+    margin-top: 4vh;
+    max-height: 25vh;
+    right: 20px;
+  }
+
+  .leoparty .popper {
+    right: -10px;
+    margin: 0 !important;
+  }
+
+  .leoparty .partyName {
+    opacity: 1;
+  }
+}
