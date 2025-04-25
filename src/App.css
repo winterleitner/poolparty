@@ -104,4 +104,9 @@
   .leoparty .partyName {
     opacity: 1;
   }
+
+  .glamour .popper {
+    margin: 0 !important;
+    max-height: 40vh;
+  }
 }
