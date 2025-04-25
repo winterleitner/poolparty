@@ -13,7 +13,7 @@ const Poolparty = ({name, banner, year, link, popper, className, pwd}) => {
 
     }
 
-    return <div className={`poolparty ${className}`} key={name} style={{backgroundImage: `url("${banner}")`}} onClick={openGallery}>
+    return <section className={`poolparty ${className}`} key={name} style={{backgroundImage: `url("${banner}")`}} onClick={openGallery}>
         <div className="year">{year}</div>
         <img className="popper" src={popper}/>
         <div className="partyName">
@@ -21,7 +21,7 @@ const Poolparty = ({name, banner, year, link, popper, className, pwd}) => {
             {name}
             </h1>
         </div>
-    </div>
+    </section>
 }
 
 Poolparty.propTypes = {
